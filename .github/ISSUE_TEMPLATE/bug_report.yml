@@ -1,0 +1,30 @@
+name: 使用问题 / Bug report
+description: 报告可复现的使用问题。
+title: "[Bug] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: 应用版本 / App version
+      placeholder: 请填写设置页显示的版本
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: 操作系统 / Operating system
+      placeholder: Windows / macOS 及版本
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤 / Steps to reproduce
+      description: 说明使用哪个工具、执行了什么操作，以及预期与实际结果。
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 截图或补充说明 / Screenshots or context
+      description: 提交前请移除密码、密钥、令牌及其他私人信息。
